@@ -1,15 +1,14 @@
 import React from "react";
-import Info from "./info";
-import data from "./data.json";
+import Form from './FormContainer'
 
 function App() {
-    const arr1= data.map(elem=><Info key={elem.id} question={elem.punchLine} answer={elem.question}/>)
-  return (
+  return(
     <div>
-      <h3>Joke-o-Meter</h3>
-      {arr1}
+      <Form/>
     </div>
-  );
+  )
+  
 }
+
 
 export default App;
